@@ -26,15 +26,15 @@
 			$result = $mysqli->query($sql);
 			$user = $result->fetch_assoc();
 			$id = $user['id'];
-			header("location: /~jessiekl/GetReadingTracker/users/show.php?id=" . $id);
+			header("location: /users/show.php?id=" . $id);
 		}
 		else {
 			$_SESSION['error'] = "Username already exists. Please use a different username or log in below.";
-			header("location: /~jessiekl/GetReadingTracker/users/login.php");
+			header("location: /users/login.php");
 		}	
 	} else {
 		$_SESSION['error'] = "Passwords do not match. Please try again.";
-		header("location: /~jessiekl/GetReadingTracker/users/register.php");
+		header("location: /users/register.php");
 	}
 	
 ?>
