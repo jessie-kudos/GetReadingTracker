@@ -11,7 +11,7 @@
 		<meta charset="utf-8"/>
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
    		 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="/~jessiekl/GetReadingTracker/assets/stylesheets/foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/foundation.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/app.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Log In</title>
@@ -38,7 +38,7 @@
 
 			<!-- Log-in form -->
 			<div class="medium-6 large-4 sign-in-form-cell">
-				<form class="sign-in-form" action="/~jessiekl/GetReadingTracker/users/validate.php" method="post">
+				<form class="sign-in-form" action="/users/validate.php" method="post">
 					<div class="alert alert-error"><?php echo $_SESSION['error'] ?></div>
 					<div class="grid-container">
 						<div class="grid-x grid-padding-x">
@@ -62,7 +62,7 @@
 		<!-- Image Banner -->
 		<div class="grid-x">
 			<div class="cell">
-				<img src="/~jessiekl/GetReadingTracker/assets/images/banner.jpg" alt="Welcome banner"></img>
+				<img src="/assets/images/banner.jpg" alt="Welcome banner"></img>
 			</div>
 		</div>
 		
@@ -77,10 +77,10 @@
 				<p id="last-modified"> </p>
 			</div>
 		</div>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/jquery.js"></script>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/foundation.min.js"></script>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/what-input.js"></script>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/app.js"></script>
-		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script src="/assets/javascripts/jquery.js"></script>
+		<script src="/assets/javascripts/foundation.min.js"></script>
+		<script src="/assets/javascripts/what-input.js"></script>
+		<script src="/assets/javascripts/app.js"></script>
+		<script src="/translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>
