@@ -1,0 +1,479 @@
+body {
+	background-color: #e9f0d8; 
+  color: #2e2200;
+}
+
+a {
+  color: #42b890;
+}
+
+.button {
+  background-color: #329ca6;
+}
+
+.top-bar, .top-bar ul {
+	background-color: #2e2200;
+}
+
+.callout.large {
+  background-color: #fffff7;
+  margin-bottom: 0;
+}
+
+.callout {
+  border: 1px solid #2e2200;
+}
+
+.reader-dropdown-menu {
+  padding-top: 1rem;
+}
+
+.cell.footer {
+  background-color: #e9f0d8;
+}
+
+.welcome-greeting {
+  font-family: fantasy;
+  text-align: center;
+}
+
+.form.delete-reader {
+  text-align: center;
+}
+
+.button.small.expanded.delete-reader {
+  background-color: #ab5250;
+}
+
+.readers-menu {
+  font-size: x-large;
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+  border-color: #42b890 transparent transparent;
+}
+
+.small-4.book-icon {
+  text-align: right;
+}
+
+.readers-label {
+  font-size: x-large;
+}
+
+.button.clear.readers-button {
+  font-size: large;
+  color: #42b890;
+  padding-bottom: 0;
+  padding-top: 1.7rem;
+  margin-bottom: 1.4rem;
+}
+
+.off-canvas {
+  background: #fffff7;
+  text-align: center;
+}
+
+.footer-text-container {
+  text-align: right;
+}
+
+.footer-text {
+  font-size: small;
+}
+
+#last-modified {
+  font-size: small;
+}
+
+.alert.alert-error {
+  color: #ab5250;
+}
+
+.medium-6.sign-in-form-cell {
+  padding: 2rem;
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .medium-6.sign-in-form-cell {
+    padding-top: 2rem;
+  }
+  #home-link {
+    display: none;
+  }
+}
+
+.medium-6.app-info-cell {
+  padding: 2rem;
+  padding-top: 6rem;
+}
+
+#sign-up-form-cell {
+  padding: 2rem;
+  padding-top: 6rem;
+}
+
+.translate-cell {
+  text-align: right;
+}
+
+.title-bar {
+  background-color: #2e2200;
+}
+
+.main-image-panel {
+  background-image: url("/~jessiekl/GetReadingTracker/assets/images/HomeImage.jpg");
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+  margin-top: 0.6rem;
+  border-color: #665a3b transparent transparent;
+}
+
+#readers-label {
+  padding-top: 2.2rem;
+}
+
+
+/*users/signin*/
+
+.sign-in-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 0;
+  background-color: #fffff7;
+}
+
+.grid-x.sign-in-content {
+  background-color: #e9f0d8;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  color: #2e2200;
+}
+
+.name-custom {
+  font-family: fantasy;
+}
+
+.cell.translate {
+  text-align: right;
+  background-color: #e9f0d8;
+}
+
+
+/*users/signip*/
+
+.sign-up-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 0;
+  background-color: #fffff7;
+}
+
+
+/*users/show*/
+
+.panel-image {
+  background-color: #fffff7;
+}
+
+.fa.fa-book {
+  padding-right: 0.5rem;
+  padding-top: 1.7rem;
+  font-size: x-large;
+  color: #42b890;
+}
+
+.small-3.vertical-cell {
+  border-right: 1px solid #2e2200;
+  border-bottom: 1px solid #cacaca;
+}
+
+.reader-dropdown-menu-users {
+  border: 0;
+  padding-top: 1rem;
+}
+
+.callout.large.users-show {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+.add-reader-popup.style {
+  background: #e9f0d8;
+}
+
+
+/*readers/show*/
+
+
+.add-reader-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fffff7;
+}
+
+.send-report-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fffff7;
+}
+
+.add-reading-session-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 0;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right:2rem;
+  background-color: #fffff7;
+}
+
+.readers-panel {
+  background-color: #fffff7;
+}
+
+.stat-number {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 45pt;
+  border-right: 1px solid #2e2200;
+}
+
+.stat-name {
+  margin-bottom: 0;
+  text-align: center;
+  border-right: 1px solid #2e2200;
+  padding-bottom: 0.7rem;
+}
+
+.button.menu-button {
+  height: 4.7rem;
+  padding-top: 1.9rem;
+  font-size: larger;
+}
+
+.button-group.menu-buttons {
+  margin-bottom: 0;
+}
+
+.small-3.vertical-menu {
+  background-color: #fffff7;
+  border-right: 1px solid #2e2200;
+  border-bottom: 1px solid #cacaca;
+}
+
+.callout.large.readers-show {
+  border-top: 0;
+  border-left: 0;
+}
+
+.small-3.readers-menu {
+  background-color: #fffff7;
+  text-align: center;
+}
+
+.readers-list {
+  font-size: medium;
+}
+
+
+/*reader/statistics*/
+
+/*all bar-graph css was modied from VERTICAL BAR GRAPH By Kevin Ball at https://foundation.zurb.com/building-blocks/blocks/bar-graph.html*/
+.bar-graph {
+  padding: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 425px;
+  margin: 0;
+}
+
+.bar-graph li {
+  display: block;
+  padding: 1.5625rem 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 4px 4px 0 0;
+  max-width: 20%;
+  height: 100%;
+  margin: 0 1.8% 0 0;
+  -webkit-flex: 1 1 15%;
+      -ms-flex: 1 1 15%;
+          flex: 1 1 15%;
+}
+
+.bar-graph .bar-graph-axis {
+  -webkit-flex: 1 1 8%;
+      -ms-flex: 1 1 8%;
+          flex: 1 1 8%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bar-graph .bar-graph-label {
+  margin: 0;
+  background-color: none;
+  color: #8a8a8a;
+  position: relative;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed #8a8a8a;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 20%;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 64em) {
+  .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+    width: 30%;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .bar-graph-label:after {
+    left: auto;
+    right: 0;
+  }
+}
+
+.bar-graph .percent {
+  letter-spacing: -3px;
+  opacity: 0.4;
+  width: 100%;
+  font-size: 1.875rem;
+  position: absolute;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bar-graph .percent {
+    font-size: 3.875rem;
+  }
+}
+
+.bar-graph .percent span {
+  font-size: 1.875rem;
+}
+
+.bar-graph .description {
+  font-weight: 800;
+  opacity: 0.5;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 14px;
+  bottom: 20px;
+  position: absolute;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.bar-graph .bar.sun {
+  border: 1px solid #e6959b;
+  background: linear-gradient(#ba686e, #e6959b 70%);
+}
+
+.bar-graph .bar.mon {
+  border: 1px solid #e6bc95;
+  background: linear-gradient(#ba9068, #e6bc95 70%);
+}
+
+.bar-graph .bar.tues {
+  border: 1px solid #e6e195;
+  background: linear-gradient(#bab668, #e6e195 70%);
+}
+
+.bar-graph .bar.wed {
+  border: 1px solid #95e69c;
+  background: linear-gradient(#68ba70, #95e69c 70%);
+}
+
+.bar-graph .bar.thurs {
+  border: 1px solid #95a4e6;
+  background: linear-gradient(#6876ba, #95a4e6 70%);
+}
+
+.bar-graph .bar.fri {
+  border: 1px solid #e6c4ff;
+  background: linear-gradient(#b895e6, #e6c4ff 70%);
+}
+
+.bar-graph .bar.sat {
+  border: 1px solid #dc95e6;
+  background: linear-gradient(#b168ba, #dc95e6 70%);
+}
+
+.bar-graph-callout {
+  background-color: #fffff7;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border: 1px solid #cacaca;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/*.percent.wed {
+  padding-top: 2rem;
+}*/
+
+.description.wed {
+  font-size: 0.9rem;
+}
+
+.table-callout {
+  background-color: #fffff7;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: 1px solid #cacaca;
+  overflow: auto;
+}
+
+table thead {
+  background: #2e2200;
+  color: #fffff7;
+}
+
+.fa.fa-caret-up {
+  position: absolute;
+  padding-left: 0.2rem;
+  cursor: pointer;
+}
+
+.fa.fa-caret-down {
+  position: absolute;
+  padding-left: 0.2rem;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+

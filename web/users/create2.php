@@ -1,0 +1,40 @@
+<?php
+	session_start();
+	$_SESSION['error'] = '';
+	$mysqli = new mysqli('localhost', 'jessiekl', 'jessieklabyz', 'jessiekl');
+	
+	if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+	}
+	echo $mysqli->host_info . "\n";
+
+	$username = $mysqli->real_escape_string($_POST['username']);
+	$email = $mysqli->real_escape_string($_POST['email']);
+	$password = $mysqli->real_escape_string($_POST['password']);
+	$confirmPassword = $_POST['confirmPassword'];
+
+	if($password == $confirmPassword) {
+
+		$salted = "jhdf45fhuig8sdhzdhsuhaskjhs".$password."uyf83ona";
+		$hashed = hash('sha512', $salted);
+
+		$sql = "INSERT INTO user (username, email, password)" . "VALUES ('$username', '$email', '$hashed')";
+
+		if ($mysqli->query($sql) == true) { 
+
+			$sql = "SELECT id FROM user WHERE username = '$username' AND email = '$email' AND password = '$hashed'";
+			$result = $mysqli->query($sql);
+			$user = $result->fetch_assoc();
+			$id = $user['id'];
+			header("location: /~jessiekl/GetReadingTracker/users/show.php?id=" . $id);
+		}
+		else {
+			$_SESSION['error'] = "Username already exists. Please use a different username or log in below.";
+			header("location: /~jessiekl/GetReadingTracker/users/login.php");
+		}	
+	} else {
+		$_SESSION['error'] = "Passwords do not match. Please try again.";
+		header("location: /~jessiekl/GetReadingTracker/users/register.php");
+	}
+	
+?>
