@@ -16,7 +16,6 @@
 	$sql = "SELECT * FROM user WHERE username = '$username'";
 	$result = $mysqli->query($sql);
 
-
 	if ($result->num_rows == 1) {
 
 		$salted = "jhdf45fhuig8sdhzdhsuhaskjhs".$password."uyf83ona";
@@ -29,14 +28,14 @@
 			$id = $user['id'];
 			$_SESSION['username'] = $username;
 			$_SESSION['userId'] = $id;
-			header("location: /~jessiekl/GetReadingTracker/users/show.php?id=" . $id);
+			header("location: /users/show.php?id=" . $id);
 		} else {
 			$_SESSION['error'] = "Incorrect password. Please try again.";
-			header("location: /~jessiekl/GetReadingTracker/users/login.php");
+			header("location: /users/login.php");
 		}
 
 	} else {
 		$_SESSION['error'] = "User is not yet registered. Please register here.";
-		header("location: /~jessiekl/GetReadingTracker/users/register.php");
+		header("location: /users/register.php");
 	}	
 ?>
