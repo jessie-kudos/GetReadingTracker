@@ -81,6 +81,6 @@
 		<script src="/assets/javascripts/foundation.min.js"></script>
 		<script src="/assets/javascripts/what-input.js"></script>
 		<script src="/assets/javascripts/app.js"></script>
-		<script src="/translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>
