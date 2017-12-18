@@ -10,8 +10,8 @@
 		<meta charset="utf-8"/>
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="/~jessiekl/GetReadingTracker/assets/stylesheets/foundation.min.css">
-		<link rel="stylesheet" type="text/css" href="/~jessiekl/GetReadingTracker/assets/stylesheets/app.css">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/app.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Register</title>
 	</head>
@@ -27,7 +27,7 @@
 		<!-- Register form -->
 		<div class="grid-x">
 			<div class="small-12 medium-10 medium-offset-1 large-6 large-offset-3" id="sign-up-form-cell">
-				<form class="sign-up-form" action="/~jessiekl/GetReadingTracker/users/create2.php" method="post">
+				<form class="sign-up-form" action="/users/create2.php" method="post">
 					<div class="alert alert-error"><?php echo $_SESSION['error'] ?></div>
 					<div class="grid-container">
 						<div class="grid-x grid-padding-x">
@@ -57,7 +57,7 @@
 		<!-- Image Banner -->
 		<div class="grid-x">
 			<div class="cell">
-				<img src="/~jessiekl/GetReadingTracker/assets/images/banner.jpg" alt="Welcome banner"></img>
+				<img src="/assets/images/banner.jpg" alt="Welcome banner"></img>
 			</div>
 		</div>
 
@@ -72,10 +72,10 @@
 				<p id="last-modified"> </p>
 			</div>
 		</div>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/jquery.js"></script>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/foundation.min.js"></script>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/what-input.js"></script>
-		<script src="/~jessiekl/GetReadingTracker/assets/javascripts/app.js"></script>
+		<script src="/assets/javascripts/jquery.js"></script>
+		<script src="/assets/javascripts/foundation.min.js"></script>
+		<script src="/assets/javascripts/what-input.js"></script>
+		<script src="/assets/javascripts/app.js"></script>
 		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>
