@@ -12,7 +12,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
    		 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="/~jessiekl/GetReadingTracker/assets/stylesheets/foundation.min.css">
-		<link rel="stylesheet" type="text/css" href="/~jessiekl/GetReadingTracker/assets/stylesheets/app.css">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/app.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Log In</title>
 	</head>
