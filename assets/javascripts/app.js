@@ -52,13 +52,6 @@ function emptyReadersAlert() {
 }
 
 /*
-Initiates Dynatable plug-in
-*/
-$(document).ready(function() {
-  window.sessionTable = $('#session-table').dynatable();
-});
-
-/*
 Takes a title and author and puts it into a string with a '+' in between each word.
 Example catInfo("The Big Hill", "Ray Burns") returns "The+Big+Hill+Ray+Burns" 
 */
@@ -123,26 +116,26 @@ function noInfoAvailable() {
 /*
 Deletes a reading session when the "x" icon is clicked.
 */
-$(function() {
-  // $('.fa.fa-times-circle').click(function() {
-  $('#session-table').on('click', '.fa.fa-times-circle', function() {
-    var del_id = $(this).attr('id');
-    var $ele = $(this).parent().parent();
-    $.ajax({
-      type: 'POST',
-      url: '/~jessiekl/GetReadingTracker/reading_sessions/delete.php',
-      data: {del_id:del_id},
-      success: function(data){
-        if(data=="YES") {
-          $ele.fadeOut().remove();
-          window.sessionTable.dom.update();
-        } else {
-          alert("Can't delete this session")
-        }
-      }
-    })
-  })
-});
+// $(function() {
+//   // $('.fa.fa-times-circle').click(function() {
+//   $('#session-table').on('click', '.fa.fa-times-circle', function() {
+//     var del_id = $(this).attr('id');
+//     var $ele = $(this).parent().parent();
+//     $.ajax({
+//       type: 'POST',
+//       url: '/~jessiekl/GetReadingTracker/reading_sessions/delete.php',
+//       data: {del_id:del_id},
+//       success: function(data){
+//         if(data=="YES") {
+//           $ele.fadeOut().remove();
+//           window.sessionTable.dom.update();
+//         } else {
+//           alert("Can't delete this session")
+//         }
+//       }
+//     })
+//   })
+// });
 
 var readerid = $("#readerid").val();
 
@@ -156,8 +149,8 @@ $(document).ready(function() {
     gotoPageArea: 'none',
 
     actions: {
-      listAction: '/~jessiekl/GetReadingTracker/reading_sessions/show.php',
-      deleteAction: '/~jessiekl/GetReadingTracker/reading_sessions/delete.php'
+      listAction: '/reading_sessions/show.php',
+      deleteAction: '/reading_sessions/delete.php'
     },
     fields: {
       id: {
