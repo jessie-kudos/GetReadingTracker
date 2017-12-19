@@ -5,7 +5,7 @@
 	$readerId = $mysqli->real_escape_string($_POST['id']);
 	$id = $_SESSION['userId'];
 
-	$sql = "DELETE FROM reader WHERE id = '$readerId'";
+	$sql = "DELETE FROM readers WHERE id = '$readerId'";
 
 	if ($mysqli->query($sql) == true) {
 		$_SESSION['info'] = 'Reader successfully deleted!';

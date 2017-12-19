@@ -364,7 +364,7 @@
 			<div class="small-6 small-offset-3 cell">
 				<form class="form delete-reader" action="/readers/delete.php" method="post">
 					<input type="submit" class="button small expanded delete-reader" id="btn-submit" value="Delete Reader" onclick=""></input>
-					<input type="hidden" name="id" value="<?php echo $readerid ?>">
+					<input type="hidden" name="id" value="<?php echo $readerId ?>">
 				</form>
 			</div>
 		</div>
