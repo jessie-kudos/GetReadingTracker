@@ -1,18 +1,18 @@
 <?php
 	session_start();
-	$mysqli = new mysqli('localhost', 'jessiekl', 'jessieklabyz', 'jessiekl');
+	require (__DIR__.'/../connection.php');
 
-	$id = $mysqli->real_escape_string($_POST['id']);
-	$username = $mysqli->real_escape_string($_POST['username']);
+	$readerId = $mysqli->real_escape_string($_POST['id']);
+	$id = $_SESSION['userId'];
 
-	$sql = "DELETE FROM reader WHERE id = '$id'";
+	$sql = "DELETE FROM reader WHERE id = '$readerId'";
 
 	if ($mysqli->query($sql) == true) {
 		$_SESSION['info'] = 'Reader successfully deleted!';
-		header("location: /~jessiekl/GetReadingTracker/users/show.php?username=" . $username);
+		header("location: /users/show.php?id=" . $id);
 	}
 	else {
 		$_SESSION['error'] = "Reader could not be deleted.";
-		header("location: /~jessiekl/GetReadingTracker/users/show.php?username=" . $username);
+		header("location: /users/show.php?id=" . $id);
 	}	
 ?>
