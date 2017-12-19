@@ -27,7 +27,7 @@
 		<!-- Register form -->
 		<div class="grid-x">
 			<div class="small-12 medium-10 medium-offset-1 large-6 large-offset-3" id="sign-up-form-cell">
-				<form class="sign-up-form" action="/users/create2.php" method="post">
+				<form class="sign-up-form" action="/users/create.php" method="post">
 					<div class="alert alert-error"><?php echo $_SESSION['error'] ?></div>
 					<div class="grid-container">
 						<div class="grid-x grid-padding-x">
