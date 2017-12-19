@@ -7,4 +7,9 @@
 	$db = substr($url["path"], 1);
 
 	$mysqli = new mysqli($server, $username, $password, $db);
+
+	if ($mysqli->connect_error) {
+		die("Connection failed: " . $mysqli->connect_error);
+	}
+	echo "Connection successful";
 ?>
