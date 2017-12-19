@@ -10,7 +10,7 @@
 	// echo $mysqli->host_info . "\n";
 	//require (__DIR__.'/../connection.php');
 
-	$url = parse_url(getenv("mysql://b7acce26205a72:05a4c8c1@us-cdbr-iron-east-05.cleardb.net/heroku_58a0d489d10415d?reconnect=true"));
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL");
 
 	$server = $url["host"];
 	$username = $url["user"];
