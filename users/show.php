@@ -1,13 +1,18 @@
 <?php
 	session_start();
 	require (__DIR__.'/../connection.php');
-	$id = $_SESSION['userId'];
-	$username = $_SESSION['username'];
 
-	$sql = "SELECT * FROM users WHERE id = '$id'";
-	$result = $mysqli->query($sql);
-	$user = $result->fetch_assoc();
-	$username = $user['username'];
+	if (!isset($_SESSION['userId']) && empty($_SESSION['userId'])) {
+		header("location: /users/login.php");
+	} else {
+		$id = $_SESSION['userId'];
+		$username = $_SESSION['username'];
+
+		$sql = "SELECT * FROM users WHERE id = '$id'";
+		$result = $mysqli->query($sql);
+		$user = $result->fetch_assoc();
+		$username = $user['username'];
+	}
 ?>
 
 		
