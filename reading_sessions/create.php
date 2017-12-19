@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$mysqli = new mysqli('localhost', 'jessiekl', 'jessieklabyz', 'jessiekl');
+	require (__DIR__.'/../connection.php');
 
 	$sessiondate = $mysqli->real_escape_string($_POST['sessiondate']);
 	$title = $mysqli->real_escape_string($_POST['title']);
@@ -13,15 +13,15 @@
 	$authorF = formatInput($author);
 
 
-	$sql = "INSERT INTO readingsession (sessiondate, minutes, author, title, finished, readerid)" . "VALUES ('$sessiondate','$minutes','$authorF','$titleF','$finished','$readerid')";
+	$sql = "INSERT INTO readingsessions (sessiondate, minutes, author, title, finished, readerid)" . "VALUES ('$sessiondate','$minutes','$authorF','$titleF','$finished','$readerid')";
 
 	if ($mysqli->query($sql) == true) {
 		$_SESSION['info'] = 'Reading session successfully added!';
-		header("location: /~jessiekl/GetReadingTracker/readers/show.php?id=" . $readerid);
+		header("location: /readers/show.php?id=" . $readerid);
 	}
 	else {
 		$_SESSION['error'] = "Reading session could not be added.";
-		header("location: /~jessiekl/GetReadingTracker/readers/show.php?id=" . $readerid);
+		header("location: /readers/show.php?id=" . $readerid);
 	}
 
 	function upcase($word) {
