@@ -23,7 +23,7 @@
 
 		if ($mysqli->query($sql) == true) { 
 
-			$sql = "SELECT id FROM user WHERE username = '$username' AND email = '$email' AND password = '$hashed'";
+			$sql = "SELECT id FROM users WHERE username = '$username' AND email = '$email' AND password = '$hashed'";
 			$result = $mysqli->query($sql);
 			$user = $result->fetch_assoc();
 			$id = $user['id'];
