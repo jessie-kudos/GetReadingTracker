@@ -19,7 +19,7 @@
 		$salted = "jhdf45fhuig8sdhzdhsuhaskjhs".$password."uyf83ona";
 		$hashed = hash('sha512', $salted);
 
-		$sql = "INSERT INTO user (username, email, password)" . "VALUES ('$username', '$email', '$hashed')";
+		$sql = "INSERT INTO users (username, email, password)" . "VALUES ('$username', '$email', '$hashed')";
 
 		if ($mysqli->query($sql) == true) { 
 
