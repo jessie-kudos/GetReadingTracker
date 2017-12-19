@@ -1,19 +1,14 @@
 <?php
 	session_start();
 	$_SESSION['error'] = '';
-	$mysqli = new mysqli('localhost', 'jessiekl', 'jessieklabyz', 'jessiekl');
-	
-	if ($mysqli->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-	}
-	echo $mysqli->host_info . "\n";
+	require (__DIR__.'/../connection.php');
 	
 	if(isset($_POST) & !empty($_POST)) {
 		$username = $mysqli->real_escape_string($_POST['username']);
 		$password = $mysqli->real_escape_string($_POST['password']);
 	}
 
-	$sql = "SELECT * FROM user WHERE username = '$username'";
+	$sql = "SELECT * FROM users WHERE username = '$username'";
 	$result = $mysqli->query($sql);
 
 	if ($result->num_rows == 1) {
