@@ -1,13 +1,13 @@
 <?php
 	session_start();
 	$_SESSION['error'] = '';
-	// $mysqli = new mysqli('localhost', 'jessiekl', 'jessieklabyz', 'jessiekl');
+	$mysqli = new mysqli('us-cdbr-iron-east-05.cleardb.net', 'b7acce26205a72', '05a4c8c1');
 	
-	// if ($mysqli->connect_errno) {
- //    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-	// }
-	// echo $mysqli->host_info . "\n";
-	require (__DIR__.'/../connection.php');
+	if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+	}
+	echo $mysqli->host_info . "\n";
+	// require (__DIR__.'/../connection.php');
 
 	$username = $mysqli->real_escape_string($_POST['username']);
 	$email = $mysqli->real_escape_string($_POST['email']);
