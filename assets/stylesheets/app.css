@@ -75,7 +75,7 @@ a {
 }
 
 .main-image-panel {
-  background-image: url("/~jessiekl/GetReadingTracker/assets/images/HomeImage.jpg");
+  background-image: url("/assets/images/HomeImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
